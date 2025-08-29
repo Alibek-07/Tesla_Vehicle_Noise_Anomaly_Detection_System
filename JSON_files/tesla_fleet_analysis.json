@@ -1,0 +1,50 @@
+{
+  "fleet_summary": {
+    "total_vehicles": 1500,
+    "processing_time": 1.7755463123321533,
+    "timestamp": "2025-08-28T20:57:51.872122"
+  },
+  "performance_metrics": {
+    "total_time": 1.75,
+    "throughput_per_second": 854.99,
+    "average_latency_ms": 28.86,
+    "median_latency_ms": 28.87,
+    "p95_latency_ms": 38.77,
+    "p99_latency_ms": 42.75,
+    "peak_latency_ms": 47.54,
+    "min_latency_ms": 15.7,
+    "total_processed": 1500,
+    "successful_diagnostics": 1500,
+    "error_count": 0,
+    "success_rate": 100.0
+  },
+  "processing_summary": {
+    "total_vehicles_processed": 1500,
+    "processing_time_seconds": 1.75,
+    "health_distribution": {
+      "NORMAL": 1037,
+      "WARNING": 255,
+      "CRITICAL": 208
+    },
+    "anomaly_statistics": {
+      "total_anomalies": 360,
+      "anomaly_rate": 24.0,
+      "mean_score": 0.317,
+      "median_score": 0.232,
+      "std_score": 0.285,
+      "max_score": 1.0,
+      "vehicles_over_threshold": 360
+    },
+    "market_distribution": {
+      "Europe": 319,
+      "North America": 720,
+      "Asia Pacific": 113,
+      "China": 309,
+      "Other": 39
+    },
+    "service_analysis": {
+      "vehicles_needing_service": 463,
+      "service_rate": 30.9
+    }
+  }
+}
