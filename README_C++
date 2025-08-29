@@ -1,0 +1,28 @@
+## C++ Setup
+The C++ component (`tesla_nvh_advanced.cpp`) requires the following setup for compilation and execution:
+
+### Prerequisites
+- **Compiler**: GCC 7.0+ or Clang 6.0+ with AVX2 support (e.g., `g++` with `-mavx2` flag).
+- **LibTorch**: C++ API for PyTorch (version 2.5.1, matching the Python `torch` version). Download from [PyTorch website](https://pytorch.org/get-started/locally/#build-from-source) and set the `LIBTORCH` environment variable:
+export LIBTORCH=/path/to/libtorch
+- **OpenGL Development Libraries**: Install `libgl1-mesa-dev` and `freeglut3-dev` (Ubuntu) or equivalent (e.g., `brew install mesa` on macOS).
+- **Build Tools**: `make` or `cmake` for compilation.
+### Installation
+1. Install dependencies (e.g., on Ubuntu):
+sudo apt-get update
+sudo apt-get install g++ make libgl1-mesa-dev freeglut3-dev
+2. Download and extract LibTorch 2.5.1 (CPU version recommended for simplicity):
+wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-2.5.1%2Bcpu.zip
+unzip libtorch-cxx11-abi-shared-with-deps-2.5.1+cpu.zip
+export LIBTORCH=$(pwd)/libtorch
+3. Compile the C++ code:
+g++ -O3 -mavx2 -std=c++17 -I${LIBTORCH}/include -L${LIBTORCH}/lib tesla_nvh_advanced.cpp -o tesla_nvh -lc10 -ltorch -ltorch_cpu -lOpenGL -lGLUT
+- Adjust paths and flags based on your system (e.g., `-mavx2` requires AVX2-capable CPU).
+
+### Notes
+- Ensure your CPU supports AVX2 (check with `grep -o avx2 /proc/cpuinfo` on Linux).
+- For macOS, use `clang++` and adjust OpenGL libraries (e.g., `-framework OpenGL -framework GLUT`).
+- Link against the TorchScript model (`tesla_nvh_model.pt`) generated from the Python notebook.
+### Verification
+Run the compiled binary to confirm:
+./tesla_nvh tesla_nvh_model.pt --benchmark
