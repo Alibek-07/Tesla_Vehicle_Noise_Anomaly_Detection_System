@@ -24,10 +24,10 @@ This project is a comprehensive Machine Learning and high-performance computing 
 
 
 ## Installation:
-1. Clone the repository:
-- git clone https://github.com/Alibek-07/Tesla_Vehicle_Noise_Anomaly_Detection_System.git
-- cd Tesla_NVH_Audio_Detection.ipynb
-- cd tesla_dashboard.py
+1. git clone https://github.com/Alibek 07/Tesla_Vehicle_Noise_Anomaly_Detection_System.git
+- cd Tesla_Vehicle_Noise_Anomaly_Detection_System
+- jupyter notebook Tesla_NVH_Audio_Detection.ipynb  # To work on the notebook
+- streamlit run tesla_dashboard.py                 # To launch the dashboard
 2. Install Python dependencies:
 - pip install -r requirements.txt
 3. For C++ components (requires GCC/Clang with AVX2 support):
@@ -44,7 +44,7 @@ This project is a comprehensive Machine Learning and high-performance computing 
 
 ### C++ Inference
 - Run the compiled executable: ./tesla_nvh tesla_nvh_model.pt --benchmark --visualize
-- - Options: `--benchmark` for performance tests, `--visualize` for OpenGL spectrograms, `--performance` for metrics.
+- Options: `--benchmark` for performance tests, `--visualize` for OpenGL spectrograms, `--performance` for metrics.
 
 ## Results & Benchmarks
 - Model Accuracy: 87.6% on simulated data.
