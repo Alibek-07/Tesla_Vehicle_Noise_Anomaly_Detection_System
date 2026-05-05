@@ -59,8 +59,7 @@ Contributions are welcome! Please fork and submit a pull request. Focus on impro
 This project is licensed under the MIT License 
 
 ## Acknowledgments
-- Built for Tesla NVH Internship submission (January 2026).
-- Inspired by real-world automotive diagnostics challenges.
+- Inspired by automotive diagnostics challenges.
 - Uses open-source libraries like PyTorch, Librosa, and Streamlit.
 
 For questions, contact [alibekd0725@gmail.com].
