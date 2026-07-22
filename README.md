@@ -1,4 +1,4 @@
-# Tesla_Vehicle_Noise_Anomaly_Detection_System
+# Audio_Based_Vehicle_Anomaly_Detection_System
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/) [![PyTorch](https://img.shields.io/badge/PyTorch-2.5%2B-orange.svg)](https://pytorch.org/) [![C++](https://img.shields.io/badge/C%2B%2B-17%2B-green.svg)](https://isocpp.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
